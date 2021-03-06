@@ -1,0 +1,109 @@
+{
+    "actors": [
+        {
+            "id": 1,
+            "name": "Jamie Foxx",
+            "gender": "male",
+            "age": 53,
+            "movies": ["Soul"]
+        },
+        {
+            "id": 2,
+            "name": "Tina Fey",
+            "gender": "female",
+            "age": 50,
+            "movies": ["Soul"]
+        },
+        {
+            "id": 3,
+            "name": "Graham Norton",
+            "gender": "male",
+            "age": 57,
+            "movies": ["Soul"]
+        },
+        {
+            "id": 4,
+            "name": "Tom Holland",
+            "gender": "male",
+            "age": 25,
+            "movies": ["Onward"]
+        },
+        {
+            "id": 5,
+            "name": "Chris Pratt",
+            "gender": "male",
+            "age": 41,
+            "movies": ["Onward"]
+        },
+        {
+            "id": 6,
+            "name": "Julia Louis-Dreyfus",
+            "gender": "female",
+            "age": 60,
+            "movies": ["Onward"]
+        },
+        {
+            "id": 7,
+            "name": "Kelly Clarkson",
+            "gender": "female",
+            "age": 38,
+            "movies": ["Ugly Dolls"]
+        },
+        {
+            "id": 8,
+            "name": "Nick Jonas",
+            "gender": "male",
+            "age": 28,
+            "movies": ["Ugly Dolls"]
+        },
+        {
+            "id": 9,
+            "name": "Janelle Monae",
+            "gender": "female",
+            "age": 35,
+            "movies": ["Ugly Dolls"]
+        },
+        {
+            "id": 10,
+            "name": "Albert Brooks",
+            "gender": "male",
+            "age": 73,
+            "movies": ["Finding Nemo"]
+        },
+        {
+            "id": 11,
+            "name": "Ellen DeGeneras",
+            "gender": "female",
+            "age": 63,
+            "movies": ["Finding Nemo"]
+        },
+        {
+            "id": 12,
+            "name": "Alexander Gould",
+            "gender": "male",
+            "age": 26,
+            "movies": ["Finding Nemo"]
+        },
+        {
+            "id": 13,
+            "name": "Billy Crystal",
+            "gender": "male",
+            "age": 72,
+            "movies": ["Monsters Inc"]
+        },
+        {
+            "id": 14,
+            "name": "John Goodman",
+            "gender": "male",
+            "age": 68,
+            "movies": ["Monsters Inc"]
+        },
+        {
+            "id": 15,
+            "name": "Mary Gibbs",
+            "gender": "female",
+            "age": 24,
+            "movies": ["Monsters Inc"]
+        }
+    ]
+}

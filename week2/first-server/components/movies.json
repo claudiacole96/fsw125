@@ -1,0 +1,44 @@
+{
+    "movies": [
+        {
+            "id": 1,
+            "title": "Soul",
+            "year": 2020,
+            "genre": ["animation", "adventure", "comedy"],
+            "description": "After landing the gig of a lifetime, a New York jazz pianist suddenly finds himself trapped in a strange land between Earth and the afterlife.",
+            "actors": ["Jamie Foxx", "Tina Fey", "Graham Norton"]
+        },
+        {
+            "id": 2,
+            "title": "Onward",
+            "year": 2020,
+            "genre": ["animation", "adventure", "comedy"],
+            "description": "Two elven brothers embark on a quest to bring their father back for one day.",
+            "actors": ["Tom Holland", "Chris Pratt", "Julia Louis-Dreyfus"]
+        },
+        {
+            "id": 3,
+            "title": "Ugly Dolls",
+            "year": 2019,
+            "genre": ["musical", "animation", "adventure", "comedy"],
+            "description": "An animated adventure in which the free-spirited UglyDolls confront what it means to be different, struggle with a desire to be loved, and ultimately discover who you truly are is what matters most.",
+            "actors": ["Kelly Clarkson", "Nick Jonas", "Janelle Monae"]
+        },
+        {
+            "id": 4,
+            "title": "Finding Nemo",
+            "year": 2003,
+            "genre": ["animation", "adventure", "comedy"],
+            "description": "After his son is captured in the Great Barrier Reef and taken to Sydney, a timid clownfish sets out on a journey to bring him home.",
+            "actors": ["Albert Brooks", "Ellen DeGeneras", "Alexander Gould"]
+        },
+        {
+            "id": 5,
+            "title": "Monsters Inc",
+            "year": 2001,
+            "genre": ["animation", "adventure", "comedy"],
+            "description": "In order to power the city, monsters have to scare children so that they scream. However, the children are toxic to the monsters, and after a child gets through, 2 monsters realize things may not be what they think.",
+            "actors": ["Billy Crystal", "John Goodman", "Mary Gibbs"]
+        }
+    ]
+}

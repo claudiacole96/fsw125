@@ -1,0 +1,53 @@
+{
+    "directors": [
+        {
+            "id": 1,
+            "name": "Pete Docter",
+            "gender": "male",
+            "age": "52",
+            "movies": ["Soul", "Monsters Inc"]
+        },
+        {
+            "id": 2,
+            "name": "Kemp Powers",
+            "gender": "48",
+            "age": "male",
+            "movies": ["Soul"]
+        },
+        {
+            "id": 3,
+            "name": "Dan Scanlon",
+            "gender": "male",
+            "age": "44",
+            "movies": ["Onward"]
+        },
+        {
+            "id": 4,
+            "name": "Kelly Asbury",
+            "gender": "female",
+            "age": "died at 60",
+            "movies": ["Ugly Dolls"]
+        },
+        {
+            "id": 5,
+            "name": "Andrew Stanton",
+            "gender": "male",
+            "age": "55",
+            "movies": ["Finding Nemo"]
+        },
+        {
+            "id": 6,
+            "name": "Lee Unkrich",
+            "gender": "male",
+            "age": "53",
+            "movies": ["Finding Nemo"]
+        },
+        {
+            "id": 7,
+            "name": "David Silverman",
+            "gender": "male",
+            "age": "63",
+            "movies": ["Monsters Inc"]
+        }
+    ]
+}
