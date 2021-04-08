@@ -8,12 +8,10 @@ import "./App.css"
 
 function App () {
     const [students, setStudents] = useState([])
-    const [filterHouse, setFilterHouse] = useState([])
 
     function getStudents() {
         axios.get("/students")
             .then(res => {
-              setFilterHouse(res.data)
               setStudents(res.data)
             })
             .catch(err => console.log(err))
@@ -42,6 +40,19 @@ function App () {
             })
             .catch(err => console.log(err))
     }
+    
+    function handleFilter(e) {
+        const value = e.target.value
+        getStudents()
+        if (value !== "All") {
+            axios.get(`/students/search/house?house=${value}`)
+            .then(res => {
+                setStudents(prevStudents => prevStudents.filter(students => students.house === value))
+            })
+            .then(console.log(e.target.value))
+            .catch(err => console.log(err))
+        }
+    }
 
     useEffect(() => {
         getStudents()
@@ -54,6 +65,13 @@ function App () {
                 submit={addStudent}
                 buttonText="Add Student"
             />
+            <select className="filter" onChange={handleFilter}>
+                <option value="All">All</option>
+                <option value="Gryffindor">Gryffindor</option>
+                <option value="Slytherin">Slytherin</option>
+                <option value="Hufflepuff">Hufflepuff</option>
+                <option value="Ravenclaw">Ravenclaw</option>
+            </select>
             <div id="student-div">
               { 
                   students.map(student => 

@@ -28,6 +28,7 @@ form {
   color: #D3A625;
 }
 form.Gryffindor > .form-button {
+  grid-column: 2/10;
   background-color: #D3A625;
   color: #740001;
 }
@@ -36,6 +37,7 @@ form.Gryffindor > .form-button {
   color: #AAAAAA;
 }
 form.Slytherin > .form-button {
+  grid-column: 2/10;
   background-color: #AAAAAA;
   color: #1A472A;
 }
@@ -44,6 +46,7 @@ form.Slytherin > .form-button {
   color: #60605C;
 }
 form.Hufflepuff > .form-button {
+  grid-column: 2/10;
   background-color: #60605C;
   color: #FFDB00;
 }
@@ -52,6 +55,7 @@ form.Hufflepuff > .form-button {
   color: #946B2D;
 }
 form.Ravenclaw > .form-button {
+  grid-column: 2/10;
   background-color: #946B2D;
   color: #0E1A40;
 }
@@ -103,4 +107,30 @@ img {
   justify-content: center;
   align-items: center;
   border-radius: 20px;
+}
+.close-edit-button {
+  padding: 10px;
+  background-color: black;
+  float: right;
+  color: white;
+}
+button:hover {
+  background-color: black;
+}
+.button-div {
+  padding: 15px;
+  display: flex;
+}
+.delete-btn {
+  margin-right: 10px;
+  border-radius: 10px;
+}
+.edit-btn {
+  margin-left: 10px;
+  border-radius: 10px;
+}
+.filter {
+  float: right;
+  background-color: black;
+  color: white;
 }

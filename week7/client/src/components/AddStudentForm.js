@@ -17,6 +17,12 @@ function AddStudentForm (props) {
         const { name, value } = e.target
         setInputs(prevInputs => ({...prevInputs, [name]: value}))
     }
+    function handleDropdown(e) {
+        const name = e.target.name
+        const value = e.target.value
+        setInputs(prevInputs => ({...prevInputs, [name]: value}))
+        console.log(e.target.value)
+    }
 
     function handleSubmit(e) {
         e.preventDefault()
@@ -51,9 +57,10 @@ function AddStudentForm (props) {
             <select
             name="house"
             className="house"
-            onChange={handleChange}>
+            onChange={handleDropdown}>
+                <option value="none">Select House</option>
                 <option value="Gryffindor">Gryffindor</option>
-                <option value="Slytherin">Slytherinr</option>
+                <option value="Slytherin">Slytherin</option>
                 <option value="Hufflepuff">Hufflepuff</option>
                 <option value="Ravenclaw">Ravenclaw</option>
             </select>
@@ -69,6 +76,7 @@ function AddStudentForm (props) {
             name="quidditch"
             className="quidditch"
             onChange={handleChange}>
+                <option value="none">Select</option>
                 <option value="false">No</option>
                 <option value="true">Yes</option>
             </select>

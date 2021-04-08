@@ -15,16 +15,18 @@ function Student (props) {
                     <h2>{house}</h2>
                     <p>{quidditchTeam ? "Student & Quidditch Team Member" : "Student"}</p>
                     <p>Year {year}</p>
-                    <button
-                        className="delete-btn"
-                        onClick={() => props.deleteStudent(_id)}>
-                        Delete
-                    </button>
-                    <button
-                        className="edit-btn"
-                        onClick={() => setEditToggle(prevToggle => !prevToggle)}>
-                        Edit
-                    </button>
+                    <div className="button-div">
+                        <button
+                            className="delete-btn"
+                            onClick={() => props.deleteStudent(_id)}>
+                            Delete
+                        </button>
+                        <button
+                            className="edit-btn"
+                            onClick={() => setEditToggle(prevToggle => !prevToggle)}>
+                            Edit
+                        </button>
+                    </div>
                 </div>
                 </>
                 :
