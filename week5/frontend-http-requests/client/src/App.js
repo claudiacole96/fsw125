@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react"
 import axios from "axios"
 import Bounty from "./components/Bounty.js"
 import AddBountyForm from "./components/AddBountyForm"
+import "./App.css"
 
 function App () {
     const [bounties, setBounties] = useState([])

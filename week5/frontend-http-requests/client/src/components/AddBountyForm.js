@@ -27,34 +27,39 @@ function AddBountyForm (props) {
             <input
             type="text"
             name="fName"
+            className="fName"
             value={inputs.fName}
             onChange={handleChange}
             placeholder="First Name" />
             <input
             type="text"
             name="lName"
+            className="lName"
             value={inputs.lName}
             onChange={handleChange}
             placeholder="Last Name" />
-            <label>Alive? </label>
+            <label className="living-label">Alive? </label>
             <input
             type="checkbox"
             name="living"
+            className="living"
             value={inputs.living}
             onChange={handleChange} />
             <input
             type="number"
             name="bountyAmount"
+            className="bountyAmount"
             value={inputs.bountyAmount}
             onChange={handleChange}
             placeholder="Bounty Price" />
             <input
             type="text"
             name="type"
+            className="type"
             value={inputs.type}
             onChange={handleChange}
             placeholder="Jedi or Sith" />
-            <button>{props.buttonText}</button>
+            <button className="form-button" onClick={(event) => props.onClick}>{props.buttonText}</button>
         </form>
     )
 }

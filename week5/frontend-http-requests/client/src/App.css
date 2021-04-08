@@ -1,0 +1,39 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+form {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 10px;
+}
+.bounty > form {
+    width: 100%;
+}
+form > .fName, form > .bountyAmount {
+    grid-column: 1/6;
+}
+form > .lName, form > .type {
+    grid-column: 6/11;
+}
+form > .living-label {
+    grid-column: 11/12;
+}
+form > .living {
+    grid-column: 12/-1;
+}
+.form-button {
+    grid-column: 11/-1;
+}
+
+.bounty {
+    width: 80%;
+    margin: auto;
+    background-color: black;
+    color: white;
+    padding: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 25px;
+}
