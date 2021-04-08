@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#web-div {
+  background-color: black;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+header {
+  width: 90%;
+  margin: auto;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  padding: 25px;
+  margin: 10px;
+}
+form {
+  padding: 50px;
+  display: grid;
+  color: white;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 10px;
+  background-image: url("https://i.pinimg.com/originals/58/4c/19/584c19801a64c5f5f198b6c441d0cf7e.jpg");
+  background-position: center;
+  border-radius: 25px;
+}
+.student > form {
+  background-image: none;
+}
+.Gryffindor {
+  background-color: #740001;
+  color: #D3A625;
+}
+form.Gryffindor > .form-button {
+  background-color: #D3A625;
+  color: #740001;
+}
+.Slytherin {
+  background-color: #1A472A;
+  color: #AAAAAA;
+}
+form.Slytherin > .form-button {
+  background-color: #AAAAAA;
+  color: #1A472A;
+}
+.Hufflepuff {
+  background-color: #FFDB00;
+  color: #60605C;
+}
+form.Hufflepuff > .form-button {
+  background-color: #60605C;
+  color: #FFDB00;
+}
+.Ravenclaw {
+  background-color: #0E1A40;
+  color: #946B2D;
+}
+form.Ravenclaw > .form-button {
+  background-color: #946B2D;
+  color: #0E1A40;
+}
+form > .fName {
+  grid-column: 1/5;
+  height: 30px;
+}
+form > .lName, form > .year {
+  grid-column: 5/9;
+}
+form > .imgUrl {
+  grid-column: 9/-1;
+}
+.house-label {
+  grid-column: 1/2;
+}
+form > .house {
+  grid-column: 2/5;
+}
+.quidditch-team {
+  grid-column: 9/10;
+}
+form > .quidditch {
+  grid-column: 10/-1;
+}
+.form-button {
+  grid-column: 6/8;
+  background-color: gray;
+  color: white;
+  border-radius: 15px;
+}
+img {
+  width: 200px;
+  height: 300px;
+  border-radius: 15px;
+}
+#student-div {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.student {
+  padding: 25px;
+}
+.student > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
 }

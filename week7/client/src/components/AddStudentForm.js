@@ -5,6 +5,7 @@ function AddStudentForm (props) {
     {
         fName: props.fName || "",
         lName: props.lName || "",
+        imgUrl: props.imgUrl || "",
         house: props.house || "",
         year: props.year || 0,
         quidditchTeam: props.quidditchTeam || false,
@@ -24,7 +25,7 @@ function AddStudentForm (props) {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form className={inputs.house} onSubmit={handleSubmit}>
             <input
             type="text"
             name="fName"
@@ -40,13 +41,30 @@ function AddStudentForm (props) {
             onChange={handleChange}
             placeholder="Last Name" />
             <input
+            type="text"
+            name="imgUrl"
+            className="imgUrl"
+            value={inputs.imgUrl}
+            onChange={handleChange}
+            placeholder="Image Url" />
+            <label className="house-label">House </label>
+            <select
+            name="house"
+            className="house"
+            onChange={handleChange}>
+                <option value="Gryffindor">Gryffindor</option>
+                <option value="Slytherin">Slytherinr</option>
+                <option value="Hufflepuff">Hufflepuff</option>
+                <option value="Ravenclaw">Ravenclaw</option>
+            </select>
+            <input
             type="number"
             name="year"
             className="year"
             value={inputs.year}
             onChange={handleChange}
             placeholder="Year 1-7" />
-            <label className="quidditch-team">Quidditch Team?</label>
+            <label className="quidditch-team">Quidditch Team </label>
             <select
             name="quidditch"
             className="quidditch"
