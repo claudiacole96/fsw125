@@ -10,7 +10,7 @@ function App () {
     const [students, setStudents] = useState([])
 
     function getStudents() {
-        axios.get("/students")
+        axios.get("/GetStudents")
             .then(res => {
               setStudents(res.data)
             })
@@ -18,27 +18,31 @@ function App () {
     }
 
     function addStudent(newStudent) {
-        axios.post("/students", newStudent)
+        axios.post("/InsertStudent", newStudent)
             .then(res => {
-                setStudents(prevStudents => [...prevStudents, res.data])
+                //setStudents(prevStudents => [...prevStudents, res.data])
+                getStudents();
             })
             .catch(err => console.log(err))
     }
 
     function deleteStudent(studentId) {
-        axios.delete(`/students/${studentId}`)
+        axios.delete(`/DeleteStudent/${studentId}`)
             .then(res => {
-                setStudents(prevStudents => prevStudents.filter(student => student._id !== studentId))
+                //setStudents(prevStudents => prevStudents.filter(student => student.id !== studentId));
+                getStudents();
             })
             .catch(err => console.log(err))
     }
 
     function updateStudent(updates, studentId) {
-        axios.put(`/students/${studentId}`, updates)
+        axios.put(`/UpdateStudent/${studentId}`, updates)
             .then(res => {
-                setStudents(prevStudents => prevStudents.map(student => student._id !== studentId ? student : res.data))
+                //setStudents(prevStudents => prevStudents.map(student => student.id !== studentId ? student : res.data));
+                getStudents()
             })
-            .catch(err => console.log(err))
+            .
+            catch(err => console.log(err))
     }
     
     function handleFilter(e) {

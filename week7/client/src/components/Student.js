@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import AddStudentForm from "./AddStudentForm"
 
 function Student (props) {
-    const {fName, lName, house, year, quidditchTeam, imgUrl, _id} = props
+    const {fname, lname, house, year, quidditchTeam, imgUrl, id} = props
     const [editToggle, setEditToggle] = useState(false)
 
     return (
@@ -10,7 +10,7 @@ function Student (props) {
             { !editToggle ?
                 <>
                 <div className={house}>
-                    <h1>{fName} {lName}</h1>
+                    <h1>{fname} {lname}</h1>
                     <img src={imgUrl}></img>
                     <h2>{house}</h2>
                     <p>{quidditchTeam ? "Student & Quidditch Team Member" : "Student"}</p>
@@ -18,7 +18,7 @@ function Student (props) {
                     <div className="button-div">
                         <button
                             className="delete-btn"
-                            onClick={() => props.deleteStudent(_id)}>
+                            onClick={() => props.deleteStudent(id)}>
                             Delete
                         </button>
                         <button
@@ -33,13 +33,13 @@ function Student (props) {
                 <>
                 <AddStudentForm 
                     className={house}
-                    fName={fName}
-                    lName={lName}
+                    fname={fname}
+                    lname={lname}
                     year={year}
                     house={house}
                     quidditchTeam={quidditchTeam}
                     imgUrl={imgUrl}
-                    _id={_id}
+                    id={id}
                     buttonText="Submit Updates"
                     submit={props.updateStudent}
                 />

@@ -59,11 +59,11 @@ form.Ravenclaw > .form-button {
   background-color: #946B2D;
   color: #0E1A40;
 }
-form > .fName {
+form > .fname {
   grid-column: 1/5;
   height: 30px;
 }
-form > .lName, form > .year {
+form > .lname, form > .year {
   grid-column: 5/9;
 }
 form > .imgUrl {

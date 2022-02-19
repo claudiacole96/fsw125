@@ -3,8 +3,8 @@ import React, {useState} from "react"
 function AddStudentForm (props) {
     const initInputs = 
     {
-        fName: props.fName || "",
-        lName: props.lName || "",
+        fname: props.fname || "",
+        lname: props.lname || "",
         imgUrl: props.imgUrl || "",
         house: props.house || "",
         year: props.year || 0,
@@ -26,7 +26,7 @@ function AddStudentForm (props) {
 
     function handleSubmit(e) {
         e.preventDefault()
-        props.submit(inputs, props._id)
+        props.submit(inputs, props.id)
         setInputs(initInputs)
     }
 
@@ -34,16 +34,16 @@ function AddStudentForm (props) {
         <form className={inputs.house} onSubmit={handleSubmit}>
             <input
             type="text"
-            name="fName"
-            className="fName"
-            value={inputs.fName}
+            name="fname"
+            className="fname"
+            value={inputs.fname}
             onChange={handleChange}
             placeholder="First Name" />
             <input
             type="text"
-            name="lName"
-            className="lName"
-            value={inputs.lName}
+            name="lname"
+            className="lname"
+            value={inputs.lname}
             onChange={handleChange}
             placeholder="Last Name" />
             <input
@@ -73,12 +73,12 @@ function AddStudentForm (props) {
             placeholder="Year 1-7" />
             <label className="quidditch-team">Quidditch Team </label>
             <select
-            name="quidditch"
+            name="quidditchTeam"
             className="quidditch"
             onChange={handleChange}>
                 <option value="none">Select</option>
-                <option value="false">No</option>
-                <option value="true">Yes</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
             </select>
             <button className="form-button" onClick={(event) => props.onClick}>{props.buttonText}</button>
         </form>
